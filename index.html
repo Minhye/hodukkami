@@ -4,23 +4,67 @@
     <title>호두까미</title>
     <meta charset="utf-8">
     <style>
+        body {
+            margin: 0px;
+        }
         a {
-            color:red;
+            color:blue;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 500%;
+            color: gold;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ol {
+            border-right: 1px solid gray;
+            width: 150px;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 203px 1fr;
+        }
+
+        #grid ol {
+
+            padding-left: 33px;
+        }
+
+        #article {
+            padding-left: 25px;
         }
     </style>
 </head>
 <body>
     <h1>호두까미</h1>
 
-    <img src="twoshot.jpg" width="500px">
+    <!--<img src="twoshot.jpg" width="500px">-->
+    <div id="grid">
+        <ol>
+            <li>
+                <a href="hodu.html">호두</a>
+            </li>
+            <li>
+                <a href="kkami.html">까미</a>
+            </li>
+            <li>
+                <a href="box.html">까미까미</a>
+            </li>
+        </ol>
 
-    <ol>
-        <li>
-            <a href="hodu.html">호두</a>
-        </li>
-        <li>
-            <a href="kkami.html">까미까미</a>
-        </li>
-    </ol>
+        <div id="article">
+            <h2>고양이</h2>
+            <p>
+                집에서 키우는 고양이. 애완동물로서의 고양이이다. 고양이를 키우는 것은 여러 장점과 단점이 있지만 일반적으로 사람과 접촉하는 것을 꺼리지 않고, 정해진 공간에 잘 적응하며, 수명이 긴 편(보통 10년 이상)이기 때문에 고양이는 애완동물로서 최상위권에 속해있다고 할 수 있다.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
